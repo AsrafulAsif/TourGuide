@@ -1,0 +1,49 @@
+*{
+background-color: #aace92;
+}
+div{
+    /* Container */
+    display: block;
+    margin: 150px auto;
+    text-align: center;
+ }
+ a{
+    /* Common conditions that we find in projects without normalize.css */
+    text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
+ }
+ a.my-button{
+    background-color: #3399FF;
+    text-decoration: none;
+    padding: 10px 30px;
+    color: #FFFFFF;
+    font-family: Helvetica, sans-serif;
+    /* Extra details */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    transition: all 0.4s ease-in-out;
+ }
+ /* HOVER STATE */
+ a.my-button:hover{
+    background-color: #66BBFF;
+    color: #FFFFFF;
+ }
+ /* BUTTON WITH BACKGROUND TRANSPARENT */
+ a.my-button-hole{
+    border: 2px solid #3399FF;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 10px 30px;
+    color: #3399FF;
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    transition: all 0.4s ease-in-out;
+ }
+ a.my-button-hole:hover{
+    background-color: #3399FF;
+    color: #FFFFFF;
+ }

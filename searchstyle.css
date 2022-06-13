@@ -1,0 +1,9 @@
+.result_Box {
+position:fixed; 
+top:7%; 
+background-color: rgb(255, 255, 255); 
+z-index: 50;
+list-style-type:decimal-leading-zero  ;
+margin-top:10px ;
+
+}

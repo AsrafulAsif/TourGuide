@@ -1,0 +1,81 @@
+body {
+   background-color: #e6f3ff;
+}
+
+a{
+   display: block;
+   text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
+}
+.division{   
+   margin: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+ }
+ 
+ a.my-button-hole{
+   width: 200px;
+   text-decoration: none;
+   display:inline-block;
+   padding: 10px 30px;
+   border-radius: 6px;
+   box-sizing: border-box;
+   margin-top: 10px;
+   font-family:'Roboto',sans-serif;
+   font-weight:300;
+   color:#FFFFFF;
+   background-color:#4eb5f1;
+   text-align: center;
+   transition: all 0.2s;
+ }
+ a.my-button-hole:hover{
+    background-color: #111;
+    color: #FFFFFF;
+ }
+ input[type=submit] {
+
+   width: 300px;
+   text-decoration: none;
+   display:inline-block;
+   padding: 10px 30px;
+   border-radius: 6px;
+   box-sizing: border-box;
+   margin-top: 10px;
+   font-family:'Roboto',sans-serif;
+   font-weight:300;
+   color:#FFFFFF;
+   background-color:#4eb5f1;
+   text-align: center;
+   transition: all 0.2s;
+}
+input[type=submit]:hover {
+   background-color: #111;
+   color: #FFFFFF;
+}
+
+@media all and (max-width:200px){
+   a.my-button-hole{
+   display:block;
+   margin: auto;
+   
+   }
+}
+@media all and (max-width:300px){
+   input[type=submit]{
+   display:block;
+   margin-top: 10px;
+   
+   }
+}
+
+@media only screen and (max-width:300px){
+   .division{
+   
+   margin-top: 10px;
+   
+   }
+}

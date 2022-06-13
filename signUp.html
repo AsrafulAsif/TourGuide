@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="center">
+      <h1>Sign UP</h1>
+      <form name="SignUpForm" onsubmit="signupform()" action="Registration.php" method="post">
+        <div class="txt_field">
+          <input type="text" required name="email" id="email">
+          <span></span>
+          <label>Enter your email.</label>
+        </div>
+        <div class="txt_field">
+          <input type="text" required name="Phonenumber" id="Phonenumber">
+          <span></span>
+          <label>Enter your Phone number.</label>
+        </div>
+        <div class="txt_field">
+          <input type="text" required  name="uname" id="uname">
+          <span></span>
+          <label>Enter your username.</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" required name="password" id="password">
+          <span></span>
+          <label>Enter your password.</label>
+        </div>
+        <input type="submit" name="submit" id="submit" value="Signup">
+        <div class="signup_link">
+          Already a member? <a href="LoginPage.html">Login</a>
+        </div>
+      </form>
+    </div>
+
+
+
+    <script>
+      function signupform() {
+  
+        var fname = document.SignUpForm.uname.value;
+        var mobile = document.SignUpForm.Phonenumber.value;
+        var email = document.SignUpForm.email.value;
+        var password = document.SignUpForm.password.value;
+  
+        if (fname == null || fname == " ") {
+          alert(" Name can 't be blank");
+          return false;
+        } else if (password.length < 6) {
+          alert("Password must be at least 6 Digit long. ");
+          return false;
+        } else if (mobile.length < 11) {
+          alert("Mobile Number must be at least 11 Digit long. ");
+          return false;
+        } else if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
+          return (true)
+        }
+        alert("You have entered an invalid email address! ")
+        return (false)
+  
+      }
+    </script>
+
+  </body>
+</html>
